@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: Iowan Old Style;
+    font-size: 12px;
+    background-color:#333d33;
+}
+#welcome h1 {
+    font-size: 50px;
+}
+#welcome img {
+    width: 30vw;
+}
+#welcome {
+    display: flex;
+    color: #fcdebc;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    animation: fadeIn 5s; 
+}
+#button {
+    margin: 60px;
+}
+#button a{
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 80px;
+    background-color:#c8a175;
+    font-weight: bold;
+    color: #333d33;
+}
+
+#button a:hover{
+    background-color: #fcdebc;
+    color: #c8a175;
+    transition: 
+       background-color .5s,
+       color .5s
+    ;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
