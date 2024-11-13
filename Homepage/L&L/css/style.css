@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: Iowan Old Style;
+    font-size: 12px;
+    background-color: #fcfbe5;
+}
+/*NAVBAR*/
+#header {
+    justify-content: center;
+    align-items: center;
+}
+#navbar {
+    background: linear-gradient(
+        to bottom,
+        #333d33,
+        #515f51
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+}
+#navbar img {
+    width: 200px;
+}
+#header {
+    position: sticky;
+    top: 0px;
+}
+/*DROPDOWN MENU*/
+#navbar-bottom {
+    background-color: #212821;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar-bottom a {
+    display: inline-block;
+    padding: 24px;
+    text-decoration: none;
+    color: white;
+}
+#navbar-bottom #logo {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#navbar-bottom a:hover {
+    background: linear-gradient(
+        to bottom,
+        #e4e5ce,
+        #c8a175
+    );
+    color:#333d33;
+}
+.dropdown-container {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity .5s,
+        visibility .5s
+    ;
+    z-index: 0px;
+}
+.dropdown-menu a {
+    background-color: #333d33;
+    width: 100%;
+    min-width: 200px;
+}
+.dropdown-container:hover .dropdown-menu {
+    background: #fcfde8;
+    opacity: 1;
+    visibility: visible;
+}
+/*HERO*/
+#hero-1 {
+    background-image: url("../images/statueofliberty.jpg");
+    height:50vh;
+    background-size: 130vw;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+#hero-1 h1 {
+    font-size: 4.5vw;
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    color:#e4e5ce;
+}
+#hero-1 h4 {
+    font-family: sans-serif;
+    font-size: 2vw;
+    margin: 0px 5vw 0px 0px;
+    color:#e4e5ce;
+}
+#hero-1 a {
+    font-size: 2vw;
+    display: inline-block;
+    background-color:#c8a175;
+    color:#333d33;
+    text-decoration: none;
+    padding: 25px;
+    margin: 4vh 5vw 10vh 0px;
+    font-weight: bold;
+}
